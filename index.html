@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>Straight to the Point Archery</title>
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+        <div class="navigation-container">
+          <nav class="navbar">
+            <div class="logo">
+            <a href="#"> Straight To The Point Archery
+            <i class="fa fa-arrow-circle-right"></i>
+            </a>
+            </div>
+            <ul>
+              <li><a href="index.html" class="current">Home</a></li>
+              <li><a href="service.html">Service</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="location.html">Location</a></li>
+            </ul>
+          </nav>
+       </div>
+    </header>
+
+      <div class="wrapper">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="images/class1.jpg" style="width:100%">
+            <div class="text">Class 101</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/class2.jpg" style="width:100%">
+            <div class="text">Class 102</div>
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/students-competing.jpg" style="width:100%">
+            <div class="text">Students Competing</div>
+          </div>
+
+
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+
+        <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex> slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 10000); // Change image every 2 seconds
+    }
+        </script>
+
+
+
+
+
+
+
+        <section class="home-text">
+          <div class="service">
+            <h2>Service</h2>
+            <img src="images/nathan-lee-instructor.jpg" alt="" width="300"  />
+            <p>Straight to the Point Archery is an indoor training facility with 
+               28 shooting (14 -  10 yard lanes and 14 – 20 yard lanes) and 2 private coaching rooms.</p>
+            <button class="btn"><a href="service.html">Our Class</a></button>
+          </div>
+          <div class="archery">
+            <h2>Archery</h2>
+            <img src="images/derek-jenkins-instructor.jpg" alt="derek jenkins instructor" width="300"  />
+            <p>Archery is an activity where you shoot an arrow from a bow. The first bow and arrow ever created was probably
+              used for hunting, and later archery was used in combat. </p>
+            <button class="btn"><a href="about.html">Instructors</a></button>
+          </div>
+          <div class="location">
+            <h2>Location</h2>
+            <img src="images/lesson2.jpg" alt="" width="300" />
+            <p>528 Nock Point Ln </p>
+            <p>Tacoma, WA 98412 </p>
+            <p>archery-education@example.com</p>
+            <p>(253) 555-1010</p>
+            <button class="btn"><a href="location.html">Contact Us</a></button>
+          </div>
+
+        </section>
+     <footer>
+       <hr>
+       <p><a href="index.html">Main</a> | <a href="services.html">Services</a> | <a href="about.html">About</a> |
+          &copy; Copyright 2017 Straight to the Point Archery | 528 Nock Point Ln | Tacoma, WA 98412 |
+          archery-education@example.com | (253) 555-1010</p>
+
+
+          <p>Nondiscriminatory Policy: Next Step Archery admits students of any race,
+             gender presentation, sexuality, religion, national origin or ethnic origin to all rights,
+             privileges, programs and activities available to students at the school.
+             We do not discriminate in administration of our educational policies, admission policies
+             and other school administered programs. All students are welcome and valuable members of our community.
+          </p>
+
+      </footer>
+    </div>
+    </body>
+</html>
