@@ -282,15 +282,75 @@ footer p {
   padding: 0 3rem 0 0;
 }
 
-h3{
+article h3{
   margin: 0 auto;
 }
 
-h4 {
+article h4 {
   color:  #6D0D00;
   margin: 0 0 1rem 0;
 }
 
 article p{
   margin-bottom: .5rem;
+}
+
+main i{
+  margin-right: 1rem;
+  color: #6D0D00;
+}
+/*contact form*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/*about css*/
+.instructor{
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+}
+
+.instructor-text{
+  width: 720px;
+  margin: 0 0 5rem 2rem;
+}
+
+.instructor-text h3{
+  color: #ffffff;
+  margin-bottom: .5rem;
+  padding: .3rem;
+  background-color: #6D0D00;
+}
+
+figure{
+  margin: 0;
 }
