@@ -1,3 +1,7 @@
+
+* {box-sizing:border-box}
+
+
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0;
@@ -47,7 +51,6 @@ ul{
 }
 
 
-
 .navbar a{
   font-family: 'Acme', sans-serif;
   display: inline;
@@ -55,12 +58,23 @@ ul{
 }
 
 a {
-  color: #b5c1ad;
+  color: #6D0D00;
   text-decoration: none;
 }
 
 a:hover {
-  color:#6D0D00;
+  color:#b5c1ad;
+}
+
+footer a{
+  color: #b5c1ad;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #6D0D00;
+
+
 }
 
 .wrapper{
@@ -139,7 +153,6 @@ h2 {
 
 
 
-* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
@@ -241,4 +254,43 @@ footer {
 }
 footer p {
   padding-top: 0;
+}
+/* Anything can be a grid! */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* telling css that columns shouldn't flex, but generic cells should */
+.grid > [class^="grid-"] { flex: none; }
+
+/* relative widths for each column size */
+.grid-col-1  { width: 8.3333%; }
+.grid-col-2  { width: 16.6667%; }
+.grid-col-3  { width: 25%; }
+.grid-col-4  { width: 33.3333%; }
+.grid-col-5  { width: 41.6667%; }
+.grid-col-6  { width: 50%; }
+.grid-col-7  { width: 58.3333%; }
+.grid-col-8  { width: 66.6667%; }
+.grid-col-9  { width: 75%; }
+.grid-col-10 { width: 83.3333%; }
+.grid-col-11 { width: 91.6667%; }
+
+/* Adding gutters to the grid */
+.grid-guttered > [class^="grid-"] {
+  padding: 0 3rem 0 0;
+}
+
+h3{
+  margin: 0 auto;
+}
+
+h4 {
+  color:  #6D0D00;
+  margin: 0 0 1rem 0;
+}
+
+article p{
+  margin-bottom: .5rem;
 }
